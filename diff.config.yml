@@ -2,4 +2,6 @@
 examplesDir: examples
 template:
   names: [vanilla, vue, svelte, solid, react]
-  generate: pnpx wxt@latest init .{{name}} --template {{name}} --pm pnpm
+  generate: pnpx wxt@latest init {{name}} --template {{name}} --pm pnpm
+diffs:
+  outputDir: diffs

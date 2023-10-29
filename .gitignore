@@ -3,4 +3,4 @@
 .idea
 *.log
 node_modules
-examples/.*
+.temp

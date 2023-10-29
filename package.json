@@ -4,13 +4,13 @@
   "scripts": {
     "generate": "tsx scripts/generate-diffs.ts",
     "dev:generate": "cross-env SKIP_PULL_TEMPLATES=true tsx scripts/generate-diffs.ts",
+    "diff": "git diff --no-index",
     "format": "prettier --write .",
     "format:check": "prettier --write .",
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
     "@types/node": "18",
-    "@types/yaml": "^1.9.7",
     "cross-env": "^7.0.3",
     "execa": "^8.0.1",
     "lint-staged": "^14.0.1",
@@ -24,6 +24,6 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "prettier --write"
+    "*": "prettier --ignore-unknown --write"
   }
 }
