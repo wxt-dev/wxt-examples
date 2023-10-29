@@ -1,0 +1,29 @@
+{
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "generate": "tsx scripts/generate-diffs.ts",
+    "dev:generate": "cross-env SKIP_PULL_TEMPLATES=true tsx scripts/generate-diffs.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --write .",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@types/node": "18",
+    "@types/yaml": "^1.9.7",
+    "cross-env": "^7.0.3",
+    "execa": "^8.0.1",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "simple-git-hooks": "^2.9.0",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2",
+    "yaml": "^2.3.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "prettier --write"
+  }
+}

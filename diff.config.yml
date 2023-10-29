@@ -1,0 +1,5 @@
+# Custom config for generating all diffs between examples
+examplesDir: examples
+template:
+  names: [vanilla, vue, svelte, solid, react]
+  generate: pnpx wxt@latest init .{{name}} --template {{name}} --pm pnpm
