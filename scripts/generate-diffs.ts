@@ -1,11 +1,12 @@
 import YAML from 'yaml';
-import fs from 'node:fs/promises';
+import fs, { writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { execa, execaCommand } from 'execa';
 import { parseGitDiff } from './parse-git-diff';
 import { serializeDiff } from './serialize-diff';
 
 const skipPullTemplates = process.env.SKIP_PULL_TEMPLATES === 'true';
+const cwd = process.cwd();
 
 const { stdout: modifiedFiles } = await execa('git', [
   'ls-files',
@@ -25,7 +26,9 @@ const changedExampleSourceCode = [
   ...modifiedFiles.split('\n'),
   ...stagedFiles.split('\n'),
   ...untrackedFiles.split('\n'),
-].filter((file) => file.startsWith('examples') && !file.includes('README'));
+].filter(
+  (file) => file.startsWith('examples' + path.sep) && !file.includes('README'),
+);
 
 console.log();
 console.log('Generate Template Diffs');
@@ -106,7 +109,7 @@ for (const item of [...templates, ...examples]) {
     '--branch',
     item.name,
     '--prefix',
-    path.relative(process.cwd(), item.path),
+    path.relative(cwd, item.path),
   ]).catch(() => {});
 }
 
@@ -121,7 +124,7 @@ const diffs = await Promise.all(
       '-U6',
       example.base,
       example.name,
-    ]);
+    ]).catch(() => ({ stdout: '' }));
     const changes = parseGitDiff(
       diff.replaceAll('_gitignore', '.gitignore'),
     ).filter((change) => !ignoredFiles.has(change.newPath));
@@ -138,8 +141,8 @@ for (const example of diffs) {
   const templatePath = path.resolve(example.path, 'README.template.md');
   const readmePath = path.resolve(example.path, 'README.md');
   console.log(
-    `  - ${path.relative(process.cwd(), templatePath)} -> ${path.relative(
-      process.cwd(),
+    `  - ${path.relative(cwd, templatePath)} -> ${path.relative(
+      cwd,
       readmePath,
     )}`,
   );
@@ -188,6 +191,14 @@ for (const example of diffs) {
   await fs.writeFile(readmePath, readme, 'utf-8');
   await execa('prettier', ['--write', readmePath]);
 }
+
+console.log();
+console.log('Updating examples.json...');
+const json = examples.map((template) => ({
+  name: template.name,
+  url: `https://github.com/wxt-dev/wxt-examples/tree/main/examples/${template.name}/README.md`,
+}));
+await writeFile('examples.json', JSON.stringify(json, null, 2) + '\n', 'utf-8');
 
 if (changedExampleSourceCode.length > 0) {
   console.log();

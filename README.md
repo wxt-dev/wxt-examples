@@ -9,13 +9,11 @@ cd examples/vue-i18n
 pnpm dev
 ```
 
-Each example is also given it's own branch. To compare an example against a template (from `wxt init`), you can visit <https://github.com/wxt-dev/wxt-examples/compare> and compare the template branch against the example's branch.
-
-For example, to compare the `vue-i18n` example against the `vue` template, visit <https://github.com/wxt-dev/wxt-examples/compare/vue...vue-i18n>. This will give you a line-by-line diff explaining why each change is important or what it accomplishes.
+Each example is compared against it's relevant template, and it's README is generated based on the diff between the template and example.
 
 ## Adding Examples
 
-Examples should be very minimal. They should be a template with the minimal changes necessary to demonstrate 1 thing.
+Examples should be based off a template and be as minimal as possible. Do not delete any of the files created by the template if unnecessary.
 
 You can create a new example inside the `examples` directory like so:
 
@@ -23,8 +21,8 @@ You can create a new example inside the `examples` directory like so:
 # Create the project base
 pnpx wxt@latest init examples/vanilla-i18n --template vanilla --pm pnpm
 
-# Optionally, add a text description that will be displated first in the diff
-touch examples/vanilla-i18n/.description.md
+# Add a README template where the example is explained
+touch examples/vanilla-i18n/README.template.md
 ```
 
 - `--template vanilla`: When listed on <https://wxt.dev/examples.html>, this is the template whose diff will be compared against
@@ -38,3 +36,20 @@ pnpx wxt@latest init examples/vue-content-script-ui --template vue --pm pnpm
 pnpx wxt@latest init examples/vanilla-tailwind --template vanilla --pm pnpm
 pnpx wxt@latest init examples/react-options-page --template react --pm pnpm
 ```
+
+## Generating README
+
+To generate your example's README, run:
+
+```sh
+pnpm -w dev:generate
+```
+
+This will take your template file, add diffs/file changes to it, and write a new `README.md`.
+
+Your `README.template.md` file should be styled as a walkthrough, referencing individual files as you implement the example. See `examples/vue-i18n/README.template.md` for an example.
+
+You template can list a few template varialbes that will be replaced when generating the example's README.
+
+- `{{base}}`: Replaced with information about which WXT template the example is based off of
+- `{{filename}}`: Replaced with the filename and diff/contents of the specified file
