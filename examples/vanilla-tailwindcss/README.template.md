@@ -2,9 +2,6 @@
 
 {{base}}
 
-> [Note!]!
-> This works for all frameworks, not just Vue.
-
 WXT uses PostCSS internally, so just follow [Tailwind's PostCSS guide](https://tailwindcss.com/docs/installation/using-postcss).
 
 After following the steps, you should end up with something like this:
