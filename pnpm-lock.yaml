@@ -152,6 +152,15 @@ importers:
         specifier: ^0.9.0
         version: 0.9.0(@types/node@18.18.7)(webextension-polyfill@0.10.0)
 
+  examples/vanilla-welcome-page:
+    devDependencies:
+      typescript:
+        specifier: ^5.1.6
+        version: 5.2.2
+      wxt:
+        specifier: ^0.9.0
+        version: 0.9.0(@types/node@18.18.7)(webextension-polyfill@0.10.0)
+
   examples/vue:
     dependencies:
       vue:
