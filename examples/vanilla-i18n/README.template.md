@@ -1,4 +1,4 @@
-# Vanilla I18n Example
+# I18n
 
 {{base}}
 

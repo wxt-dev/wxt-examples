@@ -1,4 +1,4 @@
-# Vue I18n Example
+# Vue I18n
 
 {{base}}
 

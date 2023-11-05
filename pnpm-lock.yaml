@@ -57,8 +57,8 @@ importers:
         specifier: ^5.1.6
         version: 5.2.2
       wxt:
-        specifier: ^0.8.0
-        version: 0.8.4(@types/node@18.18.7)(webextension-polyfill@0.10.0)
+        specifier: ^0.9.0
+        version: 0.9.0(@types/node@18.18.7)(webextension-polyfill@0.10.0)
 
   examples/solid:
     dependencies:
@@ -73,8 +73,8 @@ importers:
         specifier: ^2.7.0
         version: 2.7.2(solid-js@1.8.4)(vite@4.5.0)
       wxt:
-        specifier: ^0.8.0
-        version: 0.8.4(@types/node@18.18.7)(webextension-polyfill@0.10.0)
+        specifier: ^0.9.0
+        version: 0.9.0(@types/node@18.18.7)(webextension-polyfill@0.10.0)
 
   examples/svelte:
     devDependencies:
@@ -97,8 +97,8 @@ importers:
         specifier: ^5.1.6
         version: 5.2.2
       wxt:
-        specifier: ^0.8.0
-        version: 0.8.4(@types/node@18.18.7)(webextension-polyfill@0.10.0)
+        specifier: ^0.9.0
+        version: 0.9.0(@types/node@18.18.7)(webextension-polyfill@0.10.0)
 
   examples/vanilla:
     devDependencies:
@@ -106,8 +106,8 @@ importers:
         specifier: ^5.1.6
         version: 5.2.2
       wxt:
-        specifier: ^0.8.0
-        version: 0.8.4(@types/node@18.18.7)(webextension-polyfill@0.10.0)
+        specifier: ^0.9.0
+        version: 0.9.0(@types/node@18.18.7)(webextension-polyfill@0.10.0)
 
   examples/vanilla-i18n:
     devDependencies:
@@ -115,8 +115,26 @@ importers:
         specifier: ^5.1.6
         version: 5.2.2
       wxt:
-        specifier: ^0.8.0
-        version: 0.8.4(@types/node@18.18.7)(webextension-polyfill@0.10.0)
+        specifier: ^0.9.0
+        version: 0.9.0(@types/node@18.18.7)(webextension-polyfill@0.10.0)
+
+  examples/vanilla-messaging-long-lived-connections:
+    devDependencies:
+      typescript:
+        specifier: ^5.1.6
+        version: 5.2.2
+      wxt:
+        specifier: ^0.9.0
+        version: 0.9.0(@types/node@18.18.7)(webextension-polyfill@0.10.0)
+
+  examples/vanilla-messaging-one-time-requests:
+    devDependencies:
+      typescript:
+        specifier: ^5.1.6
+        version: 5.2.2
+      wxt:
+        specifier: ^0.9.0
+        version: 0.9.0(@types/node@18.18.7)(webextension-polyfill@0.10.0)
 
   examples/vue:
     dependencies:
@@ -134,8 +152,8 @@ importers:
         specifier: ^1.8.4
         version: 1.8.22(typescript@5.2.2)
       wxt:
-        specifier: ^0.8.0
-        version: 0.8.4(@types/node@18.18.7)(webextension-polyfill@0.10.0)
+        specifier: ^0.9.0
+        version: 0.9.0(@types/node@18.18.7)(webextension-polyfill@0.10.0)
 
   examples/vue-i18n:
     dependencies:
@@ -159,8 +177,8 @@ importers:
         specifier: ^1.8.4
         version: 1.8.22(typescript@5.2.2)
       wxt:
-        specifier: ^0.8.0
-        version: 0.8.4(@types/node@18.18.7)(webextension-polyfill@0.10.0)
+        specifier: ^0.9.0
+        version: 0.9.0(@types/node@18.18.7)(webextension-polyfill@0.10.0)
 
 packages:
   /@ampproject/remapping@2.2.1:
@@ -2182,7 +2200,7 @@ packages:
       defu: 6.1.3
       dotenv: 16.3.1
       giget: 1.1.3
-      jiti: 1.20.0
+      jiti: 1.21.0
       mlly: 1.4.2
       ohash: 1.1.3
       pathe: 1.1.1
@@ -3427,10 +3445,10 @@ packages:
       }
     dev: true
 
-  /htmlparser2@8.0.2:
+  /htmlparser2@9.0.0:
     resolution:
       {
-        integrity: sha512-GYdjWKDkbRLkZ5geuHs5NY1puJ+PXwP7+fHPRz06Eirsb9ugf6d8kkXav6ADhcODhFFPMIXyxkxSuMf3D6NCFA==,
+        integrity: sha512-uxbSI98wmFT/G4P2zXx4OVx04qWUmyFPrD2/CNepa2Zo3GPNaCaaxElDgwUrwYWkK1nr9fft0Ya8dws8coDLLQ==,
       }
     dependencies:
       domelementtype: 2.3.0
@@ -3814,10 +3832,10 @@ packages:
       }
     dev: true
 
-  /jiti@1.20.0:
+  /jiti@1.21.0:
     resolution:
       {
-        integrity: sha512-3TV69ZbrvV6U5DfQimop50jE9Dl6J8O1ja1dvBbMba/sZ3YBEQqJ2VZRoQPVnhlzjNtU1vaXRZVrVjU4qtm8yA==,
+        integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==,
       }
     hasBin: true
     dev: true
@@ -3986,16 +4004,16 @@ packages:
     engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
     dev: true
 
-  /linkedom@0.15.6:
+  /linkedom@0.16.1:
     resolution:
       {
-        integrity: sha512-2Vt8fdP5BNWeIiV8B3ZxfY2Z8zB0u2nVP4JPS+cgeqUlNbY26IFdDot4FYM+pZ6dA2fTVrP6bi8Z4VNTlyurvA==,
+        integrity: sha512-kbK4txFSjGstS8aHkYo3sRSD7viQbE1TAlYRqiqU13oihzzQFp23D1OwW3VdAQJuzqzBB+1qo9Qvp0xOeoVKig==,
       }
     dependencies:
       css-select: 5.1.0
       cssom: 0.5.0
       html-escaper: 3.0.3
-      htmlparser2: 8.0.2
+      htmlparser2: 9.0.0
       uhyphen: 0.2.0
     dev: true
 
@@ -6193,10 +6211,10 @@ packages:
         optional: true
     dev: true
 
-  /wxt@0.8.4(@types/node@18.18.7)(webextension-polyfill@0.10.0):
+  /wxt@0.9.0(@types/node@18.18.7)(webextension-polyfill@0.10.0):
     resolution:
       {
-        integrity: sha512-JZ1u98csm82pM7gvmcRVfMRN6NQcxbuxxL1MpYhepQ6jr8mz/8tZHZgcaG5az7GIRJxQkSvMy7BZ1dh9BvWEcA==,
+        integrity: sha512-25QjFQ6kro1Obk3gSsqXnneIVCEFm9D778VP/40PFx8ZlcrVBPn1G+Xvm5AjvEDj5ABJ4F5P80NpQwvL7xcDNw==,
       }
     engines: { node: '>=18', pnpm: '>=8' }
     hasBin: true
@@ -6219,9 +6237,9 @@ packages:
       giget: 1.1.3
       immer: 10.0.3
       is-wsl: 3.1.0
-      jiti: 1.20.0
+      jiti: 1.21.0
       json5: 2.2.3
-      linkedom: 0.15.6
+      linkedom: 0.16.1
       minimatch: 9.0.3
       ora: 7.0.1
       picocolors: 1.0.0

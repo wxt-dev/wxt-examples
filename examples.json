@@ -1,10 +1,18 @@
 [
   {
-    "name": "vanilla-i18n",
+    "name": "I18n",
     "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-i18n/README.md"
   },
   {
-    "name": "vue-i18n",
+    "name": "Messaging - Long Lived Connections",
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-messaging-long-lived-connections/README.md"
+  },
+  {
+    "name": "Messaging - One Time Requests",
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-messaging-one-time-requests/README.md"
+  },
+  {
+    "name": "Vue I18n",
     "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vue-i18n/README.md"
   }
 ]
