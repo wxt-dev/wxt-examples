@@ -4,6 +4,10 @@
     "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-i18n/README.md"
   },
   {
+    "name": "IndexedDB",
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-indexed-db/README.md"
+  },
+  {
     "name": "Messaging - Long Lived Connections",
     "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-messaging-long-lived-connections/README.md"
   },

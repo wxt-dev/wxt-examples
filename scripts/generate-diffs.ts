@@ -141,12 +141,7 @@ const titles: Record<string, string> = {};
 for (const example of diffs) {
   const templatePath = path.resolve(example.path, 'README.template.md');
   const readmePath = path.resolve(example.path, 'README.md');
-  console.log(
-    `  - ${path.relative(cwd, templatePath)} -> ${path.relative(
-      cwd,
-      readmePath,
-    )}`,
-  );
+  console.log(`  - ${path.relative(cwd, readmePath)}`);
   const template = await fs.readFile(
     path.resolve(example.path, 'README.template.md'),
     'utf-8',
