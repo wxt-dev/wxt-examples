@@ -24,4 +24,4 @@ Add the CSS file to any HTML pages in your extension:
 
 At this point, you can start using tailwind classes in your markup.
 
-To use Tailwind inside content scripts, use either [`createContentScriptUi`](https://wxt.dev/entrypoints/content-scripts.html#ui) or [`createContentScriptIframe`](https://wxt.dev/entrypoints/content-scripts.html#iframe) to isolate Tailwind's styles from the webpage.
+To use Tailwind inside content scripts, use either [`createContentScriptUi`](https://wxt.dev/entrypoints/content-scripts.html#ui) or [`createContentScriptIframe`](https://wxt.dev/entrypoints/content-scripts.html#iframe) to isolate Tailwind's styles from the webpage. Just import `~/assets/main.css` inside the content script.
