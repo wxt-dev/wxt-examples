@@ -4,6 +4,7 @@ import { GitDiffFile } from './parse-git-diff';
 export function serializeDiff(diff: GitDiffFile): string {
   const ext = path.extname(diff.newPath).substring(1); // json, ts, etc...
 
+  console.log(diff.changes.length === 0 ? diff : '');
   if (diff.changes[0].code === '--- /dev/null') {
     // New file, no need for a diff
     const code = diff.changes
