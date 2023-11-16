@@ -35,7 +35,7 @@ First, let's install all the packages:
      "@vitejs/plugin-vue": "^4.2.3",
      "typescript": "^5.1.6",
      "vue-tsc": "^1.8.4",
-     "wxt": "^0.9.0"
+     "wxt": "^0.10.0"
    }
  }
 ```
