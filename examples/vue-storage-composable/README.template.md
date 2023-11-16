@@ -8,13 +8,12 @@ The composable will use [`@vueuse/core`'s `useAsyncState`](https://vueuse.org/co
 
 {{package.json}}
 
-Alright, everything is setup. Let's write the composable:
+Let's write the composable:
 
-1. Grab the provided storage object by calling `useStorage()`
-2. Call `useAsyncState` to initialize the state
-3. When the component is mounted, add a listener that watches for storage changes
-4. When the component is unmounted, remove the listener
-5. Instead of returning the state directly, return a "writable computed ref" that updates the value in storage when a new value is set
+1. Call `useAsyncState` to initialize the state
+2. When the component is mounted, add a listener that watches for storage changes
+3. When the component is unmounted, remove the listener
+4. Instead of returning the state directly, return a "writable computed ref" that updates the value in storage when a new value is set
 
 {{composables/useStoredValue.ts}}
 
@@ -22,6 +21,6 @@ Lets setup a interval in our background that increments a counter in `browser.st
 
 {{entrypoints/background.ts}}
 
-And we can read and update the value like so:
+And we can read and update the value like so from the UI:
 
 {{components/HelloWorld.vue}}

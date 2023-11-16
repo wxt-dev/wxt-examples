@@ -31,43 +31,12 @@ The composable will use [`@vueuse/core`'s `useAsyncState`](https://vueuse.org/co
      "vue-tsc": "^1.8.4",
 ```
 
-Next, rather than relying on `wxt/storage` in our Vue app, let's use `provide`/`inject` to do some dependency injection.
+Let's write the composable:
 
-###### entrypoints/popup/main.ts
-
-```diff
-@@ -1,5 +1,5 @@
- import { createApp } from 'vue';
- import './style.css';
- import App from './App.vue';
-
--createApp(App).mount('#app');
-+createApp(App).provide('storage', storage).mount('#app');
-```
-
-###### composables/useStorage.ts
-
-```ts
-import { Storage } from 'wxt/storage';
-import { inject } from 'vue';
-
-export default function () {
-  const storage = inject<Storage>('storage');
-  if (storage == null)
-    throw Error(
-      "Injected value for 'storage' not found. Did you forget to provide it?",
-    );
-  return storage;
-}
-```
-
-Alright, everything is setup. Let's write the composable:
-
-1. Grab the provided storage object by calling `useStorage()`
-2. Call `useAsyncState` to initialize the state
-3. When the component is mounted, add a listener that watches for storage changes
-4. When the component is unmounted, remove the listener
-5. Instead of returning the state directly, return a "writable computed ref" that updates the value in storage when a new value is set
+1. Call `useAsyncState` to initialize the state
+2. When the component is mounted, add a listener that watches for storage changes
+3. When the component is unmounted, remove the listener
+4. Instead of returning the state directly, return a "writable computed ref" that updates the value in storage when a new value is set
 
 ###### composables/useStoredValue.ts
 
@@ -84,7 +53,6 @@ export default function <
   initialValue?: T,
   opts?: UseAsyncStateOptions<Shallow, T | null>,
 ) {
-  const storage = useStorage();
   const { state, ...asyncState } = useAsyncState<T | null, [], Shallow>(
     () => storage.getItem(key),
     initialValue ?? null,
@@ -139,7 +107,7 @@ Lets setup a interval in our background that increments a counter in `browser.st
  });
 ```
 
-And we can read and update the value like so:
+And we can read and update the value like so from the UI:
 
 ###### components/HelloWorld.vue
 
