@@ -10,7 +10,6 @@ export default function <
   initialValue?: T,
   opts?: UseAsyncStateOptions<Shallow, T | null>,
 ) {
-  const storage = useStorage();
   const { state, ...asyncState } = useAsyncState<T | null, [], Shallow>(
     () => storage.getItem(key),
     initialValue ?? null,

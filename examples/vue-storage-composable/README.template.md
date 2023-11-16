@@ -8,12 +8,6 @@ The composable will use [`@vueuse/core`'s `useAsyncState`](https://vueuse.org/co
 
 {{package.json}}
 
-Next, rather than relying on `wxt/storage` in our Vue app, let's use `provide`/`inject` to do some dependency injection.
-
-{{entrypoints/popup/main.ts}}
-
-{{composables/useStorage.ts}}
-
 Alright, everything is setup. Let's write the composable:
 
 1. Grab the provided storage object by calling `useStorage()`
