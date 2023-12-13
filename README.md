@@ -42,9 +42,10 @@ pnpx wxt@latest init examples/react-options-page --template react --pm pnpm
 To generate your example's README, run:
 
 ```sh
-# Update templates to latest and generate READMEs
+# Update templates and generate READMEs
+pnpm -w generate
 
-# Don't update templates, just generate READMEs
+# Skip updating templates, just generate READMEs
 pnpm -w dev:generate
 ```
 
