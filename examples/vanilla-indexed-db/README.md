@@ -25,7 +25,7 @@ In this example, we're going to use [`idb`](https://www.npmjs.com/package/idb) t
    },
    "devDependencies": {
      "typescript": "^5.3.2",
-     "wxt": "^0.11.0"
+     "wxt": "^0.12.0"
 +  },
 +  "dependencies": {
 +    "@webext-core/proxy-service": "^1.2.0",

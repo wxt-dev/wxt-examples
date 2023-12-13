@@ -26,7 +26,7 @@ After following the steps, you should end up with something like this:
 +    "postcss": "^8.4.31",
 +    "tailwindcss": "^3.3.5",
      "typescript": "^5.3.2",
-     "wxt": "^0.11.0"
+     "wxt": "^0.12.0"
    }
  }
 ```
