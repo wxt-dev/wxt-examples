@@ -31,11 +31,15 @@ First, let's install all the packages:
 +    "vue-i18n": "9"
    },
    "devDependencies": {
+-    "@vitejs/plugin-vue": "^4.5.1",
+-    "typescript": "^5.3.2",
+-    "vue-tsc": "^1.8.25",
+-    "wxt": "^0.11.0"
 +    "@intlify/unplugin-vue-i18n": "^1.4.0",
-     "@vitejs/plugin-vue": "^4.2.3",
-     "typescript": "^5.1.6",
-     "vue-tsc": "^1.8.4",
-     "wxt": "^0.10.0"
++    "@vitejs/plugin-vue": "^4.2.3",
++    "typescript": "^5.1.6",
++    "vue-tsc": "^1.8.4",
++    "wxt": "^0.10.0"
    }
  }
 ```
