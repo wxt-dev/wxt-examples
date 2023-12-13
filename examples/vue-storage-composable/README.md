@@ -26,9 +26,9 @@ The composable will use [`@vueuse/core`'s `useAsyncState`](https://vueuse.org/co
      "vue": "^3.3.4"
    },
    "devDependencies": {
-     "@vitejs/plugin-vue": "^4.2.3",
-     "typescript": "^5.1.6",
-     "vue-tsc": "^1.8.4",
+     "@vitejs/plugin-vue": "^4.5.1",
+     "typescript": "^5.3.2",
+     "vue-tsc": "^1.8.25",
 ```
 
 Let's write the composable:
