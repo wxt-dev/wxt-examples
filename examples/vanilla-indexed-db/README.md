@@ -19,17 +19,13 @@ In this example, we're going to use [`idb`](https://www.npmjs.com/package/idb) t
 ###### package.json
 
 ```diff
-@@ -12,10 +12,14 @@
-     "zip": "wxt zip",
-     "zip:firefox": "wxt zip -b firefox",
+@@ -14,8 +14,12 @@
      "compile": "tsc --noEmit",
      "postinstall": "wxt prepare"
    },
    "devDependencies": {
--    "typescript": "^5.3.2",
--    "wxt": "^0.11.0"
-+    "typescript": "^5.1.6",
-+    "wxt": "^0.10.0"
+     "typescript": "^5.3.2",
+     "wxt": "^0.11.0"
 +  },
 +  "dependencies": {
 +    "@webext-core/proxy-service": "^1.2.0",

@@ -22,13 +22,11 @@ After following the steps, you should end up with something like this:
      "postinstall": "wxt prepare"
    },
    "devDependencies": {
--    "typescript": "^5.3.2",
--    "wxt": "^0.11.0"
 +    "autoprefixer": "^10.4.16",
 +    "postcss": "^8.4.31",
 +    "tailwindcss": "^3.3.5",
-+    "typescript": "^5.1.6",
-+    "wxt": "^0.10.0"
+     "typescript": "^5.3.2",
+     "wxt": "^0.11.0"
    }
  }
 ```

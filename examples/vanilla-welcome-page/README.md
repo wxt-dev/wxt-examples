@@ -60,25 +60,3 @@ To open a tab from the background, you need the `tabs` permission. Add it to you
 +  },
 +});
 ```
-
----
-
-### Other File Changes
-
-###### package.json
-
-```diff
-@@ -12,10 +12,10 @@
-     "zip": "wxt zip",
-     "zip:firefox": "wxt zip -b firefox",
-     "compile": "tsc --noEmit",
-     "postinstall": "wxt prepare"
-   },
-   "devDependencies": {
--    "typescript": "^5.3.2",
--    "wxt": "^0.11.0"
-+    "typescript": "^5.1.6",
-+    "wxt": "^0.10.0"
-   }
- }
-```
