@@ -2,13 +2,7 @@
 
 # Vitest
 
-WXT has first class support for running unit tests with [Vitest](https://vitest.dev/). Import `wxt/testing` to add a Vite plugin to `vitest.config.ts` that enables support for:
-
-- Auto-imports
-- Mocked `browser`
-- TSConfig paths
-- Remote URLs
-- Global variables
+WXT has first class support for running unit tests with [Vitest](https://vitest.dev/).
 
 First, start by installing Vitest:
 
@@ -35,6 +29,12 @@ First, start by installing Vitest:
 ```
 
 Then, create a Vitest config file, importing WXT and adding the plugin to automatically configure Vitest for WXT:
+
+- Auto-imports
+- Mocked `browser`
+- TSConfig paths
+- Remote URLs
+- Global variables
 
 ###### vitest.config.ts
 
