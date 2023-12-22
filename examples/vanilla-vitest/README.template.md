@@ -26,4 +26,4 @@ It's very simple to write some unit tests to cover this:
 
 {{entrypoints/__tests__/background.test.ts}}
 
-As you can see, we're can use the `browser` global like we would in a real extension. The `browser` is mocked with an in-memory implementation via [`@webext-core/fake-browser`](https://webext-core.aklinker1.io/guide/fake-browser/). See their docs for more examples and details about which APIs are implemented.
+As you can see, we can use the `browser` global like we would in a real extension. The `browser` is mocked with an in-memory implementation via [`@webext-core/fake-browser`](https://webext-core.aklinker1.io/guide/fake-browser/). See their docs for more examples and details about which APIs are implemented.
