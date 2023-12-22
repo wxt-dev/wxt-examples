@@ -75,7 +75,7 @@ For an example test, lets you want to save the date your extension was installed
  });
 ```
 
-It's very simple to write a unit test to cover this:
+It's very simple to write some unit tests to cover this:
 
 ###### entrypoints/**tests**/background.test.ts
 
