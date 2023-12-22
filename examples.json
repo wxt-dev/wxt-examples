@@ -20,6 +20,10 @@
     "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-tailwindcss/README.md"
   },
   {
+    "name": "Vitest",
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-vitest/README.md"
+  },
+  {
     "name": "Welcome Page",
     "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-welcome-page/README.md"
   },
