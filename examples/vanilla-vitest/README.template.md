@@ -8,11 +8,11 @@ First, start by installing Vitest:
 
 Then, create a Vitest config file, importing WXT and adding the plugin to automatically configure Vitest for WXT:
 
-- Auto-imports
-- Mocked `browser`
-- TSConfig paths
-- Remote URLs
-- Global variables
+- Configure auto-imports
+- Mock `browser` API
+- Setup TSConfig paths
+- Resolve remote URLs
+- Define global variables
 
 {{vitest.config.ts}}
 
