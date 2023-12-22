@@ -131,13 +131,6 @@ As you can see, we're can use the `browser` global like we would in a real exten
 
 ### Other File Changes
 
-###### .npmrc
-
-```diff
-@@ -1 +0,0 @@
--shamefully-hoist=true
-```
-
 ###### wxt.config.ts
 
 ```diff
