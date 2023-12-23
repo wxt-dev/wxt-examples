@@ -31,15 +31,13 @@ Last step of the setup: we need to create a [custom Vitest environment](https://
 > [!Warning]
 > If you don't have a background script, [you'll have to make the ID consistent](https://developer.chrome.com/docs/extensions/reference/manifest/key) and hardcode it instead.
 
-And finally, if you're using TypeScript, add a declaration file to add types for the two globals setup in the custom environment:
+And finally, if you're using TypeScript, add a declaration file to add types for the two globals defined in the custom environment:
 
 {{e2e/globals.d.ts}}
 
-This will make sure TS don't report errors when using the `browser` or `extensionId` globals.
-
 ## Writing Tests
 
-We're going to write a test to make sure the counter increments correctly in the popup. When you press the button, it should increment by 1.
+We're going to write a test to make sure the Popup's counter increments when pressed.
 
 Frameworks often recommend creating an abstraction around their APIs and writing helper function to interact with the page more naturally during tests. We'll follow this approach and create a `openPopup` util, which returns natural helper functions.
 
@@ -53,7 +51,7 @@ And after all that work, we can write a simple test:
 
 ## Running Tests
 
-To run the tests, build the extension for production, then use the `e2e` script we added at the very beginning of this walkthrough.
+To run the tests, build the extension for production and run the `e2e` script we added at the very beginning of this walkthrough.
 
 ```sh
 pnpm build && pnpm e2e

@@ -8,7 +8,7 @@ This example will walk you through adding E2E tests written with Puppeteer and V
 
 ## Setup
 
-First, install both dependencies and add a `e2e` convience script
+First, install both dependencies and add a `e2e` convience script:
 
 ###### package.json
 
@@ -76,7 +76,7 @@ export default defineConfig({
 });
 ```
 
-Last step of the setup: we need to create a [custom Vitest environment](https://vitest.dev/guide/environment.html#custom-environment) responsible for managing Puppeteer. We need to launch a browser before each test file, add some global variables, and close the browser after the tests run:
+Last step of the setup: we need to create a [custom Vitest environment](https://vitest.dev/guide/environment.html#custom-environment) responsible for managing Puppeteer. It will need to launch a browser before each test file, define a few global variables, and close the browser after the tests run:
 
 ###### e2e/vitest-environment-puppeteer.ts
 
@@ -123,7 +123,7 @@ export default <Environment>{
 > [!Warning]
 > If you don't have a background script, [you'll have to make the ID consistent](https://developer.chrome.com/docs/extensions/reference/manifest/key) and hardcode it instead.
 
-And finally, if you're using TypeScript, add a declaration file to add types for the two globals setup in the custom environment:
+And finally, if you're using TypeScript, add a declaration file to add types for the two globals defined in the custom environment:
 
 ###### e2e/globals.d.ts
 
@@ -132,11 +132,9 @@ declare const browser: import('puppeteer').Browser;
 declare const extensionId: string;
 ```
 
-This will make sure TS don't report errors when using the `browser` or `extensionId` globals.
-
 ## Writing Tests
 
-We're going to write a test to make sure the counter increments correctly in the popup. When you press the button, it should increment by 1.
+We're going to write a test to make sure the Popup's counter increments when pressed.
 
 Frameworks often recommend creating an abstraction around their APIs and writing helper function to interact with the page more naturally during tests. We'll follow this approach and create a `openPopup` util, which returns natural helper functions.
 
