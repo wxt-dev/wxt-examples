@@ -58,7 +58,7 @@ importers:
         version: 5.3.3
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/solid:
     dependencies:
@@ -74,7 +74,7 @@ importers:
         version: 2.8.0(solid-js@1.8.4)(vite@5.0.8)
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/svelte:
     devDependencies:
@@ -98,7 +98,7 @@ importers:
         version: 5.3.3
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/vanilla:
     devDependencies:
@@ -107,7 +107,7 @@ importers:
         version: 5.3.3
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/vanilla-i18n:
     devDependencies:
@@ -116,7 +116,7 @@ importers:
         version: 5.3.3
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/vanilla-indexed-db:
     dependencies:
@@ -132,7 +132,7 @@ importers:
         version: 5.3.3
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/vanilla-messaging-long-lived-connections:
     devDependencies:
@@ -141,7 +141,7 @@ importers:
         version: 5.3.3
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/vanilla-messaging-one-time-requests:
     devDependencies:
@@ -150,7 +150,7 @@ importers:
         version: 5.3.3
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/vanilla-playwright:
     devDependencies:
@@ -165,7 +165,7 @@ importers:
         version: 5.3.3
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/vanilla-puppeteer:
     devDependencies:
@@ -180,7 +180,7 @@ importers:
         version: 1.1.0(@types/node@18.18.7)
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/vanilla-tailwindcss:
     devDependencies:
@@ -198,7 +198,7 @@ importers:
         version: 5.3.3
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/vanilla-vitest:
     devDependencies:
@@ -210,7 +210,7 @@ importers:
         version: 1.1.0(@types/node@18.18.7)
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/vanilla-welcome-page:
     devDependencies:
@@ -219,7 +219,7 @@ importers:
         version: 5.3.3
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/vue:
     dependencies:
@@ -238,7 +238,7 @@ importers:
         version: 1.8.25(typescript@5.3.3)
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/vue-i18n:
     dependencies:
@@ -263,7 +263,7 @@ importers:
         version: 1.8.25(typescript@5.3.3)
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
   examples/vue-storage-composable:
     dependencies:
@@ -285,7 +285,7 @@ importers:
         version: 1.8.25(typescript@5.3.3)
       wxt:
         specifier: ^0.12.0
-        version: 0.12.2(@types/node@18.18.7)
+        version: 0.12.3(@types/node@18.18.7)
 
 packages:
   /@alloc/quick-lru@5.2.0:
@@ -8623,10 +8623,10 @@ packages:
         optional: true
     dev: true
 
-  /wxt@0.12.2(@types/node@18.18.7):
+  /wxt@0.12.3(@types/node@18.18.7):
     resolution:
       {
-        integrity: sha512-SGruzWCHwkW3tfBnSI6ifzbGvU5zm+MPPxyAqOMW25hZEWQDtUZEIHSq4exuQbUaoatqmOCSv3gJKnlYWvN9aw==,
+        integrity: sha512-qRLwDGBQPp7ULZZOT9YR5rQARMWLfXle3qLaaFDovcJxaVTBCSYG9oBuetSTTPmoP4YPxIMFCupLCILcimgG4A==,
       }
     engines: { node: '>=18', pnpm: '>=8' }
     hasBin: true
