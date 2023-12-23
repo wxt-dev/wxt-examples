@@ -151,24 +151,6 @@ export async function openPopup(page: Page, extensionId: string) {
 
 And now we can write a simple test:
 
-{{e2e/tests/popup-counter.test.ts}}
-
-Make sure to import your custom `test` and `expect` fixtures so the extension is loaded correctly.
-
-## Running Tests
-
-To run the tests, build the extension for production and run the `e2e` script we added at the very beginning of this walkthrough.
-
-```sh
-pnpm build && pnpm e2e
-```
-
-The test should pass!
-
----
-
-### Other File Changes
-
 ###### e2e/popup-counter.spec.ts
 
 ```ts
@@ -186,3 +168,15 @@ test('Popup counter increments when clicked', async ({ page, extensionId }) => {
   expect(await popup.getCounterText()).toEqual('count is 2');
 });
 ```
+
+Make sure to import your custom `test` and `expect` fixtures so the extension is loaded correctly.
+
+## Running Tests
+
+To run the tests, build the extension for production and run the `e2e` script we added at the very beginning of this walkthrough.
+
+```sh
+pnpm build && pnpm e2e
+```
+
+The test should pass!

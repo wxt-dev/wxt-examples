@@ -33,7 +33,7 @@ Frameworks often recommend creating an abstraction around their APIs and writing
 
 And now we can write a simple test:
 
-{{e2e/tests/popup-counter.test.ts}}
+{{e2e/popup-counter.spec.ts}}
 
 Make sure to import your custom `test` and `expect` fixtures so the extension is loaded correctly.
 
