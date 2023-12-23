@@ -172,11 +172,13 @@ And after all that work, we can write a simple test:
 import { test, expect } from 'vitest';
 import { openPopup } from '../pages/popup';
 
-test('Popup counter works', async () => {
+test('Popup counter increments when clicked', async () => {
   const popup = await openPopup();
   expect(await popup.getCounterText()).toEqual('count is 0');
 
   await popup.clickCounter();
+  expect(await popup.getCounterText()).toEqual('count is 1');
+
   await popup.clickCounter();
   expect(await popup.getCounterText()).toEqual('count is 2');
 });
@@ -184,7 +186,7 @@ test('Popup counter works', async () => {
 
 ## Running Tests
 
-To run the tests, build the extension for production, then use the `e2e` script we added at the very beginning of this walkthrough.
+To run the tests, build the extension for production and run the `e2e` script we added at the very beginning of this walkthrough.
 
 ```sh
 pnpm build && pnpm e2e
