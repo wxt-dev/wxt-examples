@@ -1,4 +1,3 @@
 {
-  "extends": "./.wxt/tsconfig.json",
-  "exclude": ["e2e"]
+  "extends": "./.wxt/tsconfig.json"
 }

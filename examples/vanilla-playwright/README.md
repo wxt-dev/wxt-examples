@@ -186,14 +186,3 @@ test('Popup counter increments when clicked', async ({ page, extensionId }) => {
   expect(await popup.getCounterText()).toEqual('count is 2');
 });
 ```
-
-###### tsconfig.json
-
-```diff
-@@ -1,3 +1,4 @@
- {
--  "extends": "./.wxt/tsconfig.json"
-+  "extends": "./.wxt/tsconfig.json",
-+  "exclude": ["e2e"]
- }
-```
