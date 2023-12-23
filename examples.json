@@ -16,6 +16,10 @@
     "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-messaging-one-time-requests/README.md"
   },
   {
+    "name": "Puppeteer",
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-puppeteer/README.md"
+  },
+  {
     "name": "TailwindCSS",
     "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-tailwindcss/README.md"
   },
