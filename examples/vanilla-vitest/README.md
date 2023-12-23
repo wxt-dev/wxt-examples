@@ -49,9 +49,6 @@ export default defineConfig({
     mockReset: true,
     restoreMocks: true,
   },
-  ssr: {
-    noExternal: ['wxt'],
-  },
   // This is the line that matters!
   plugins: [WxtVitest()],
 });
