@@ -225,6 +225,7 @@ const json = examples.map((template) => ({
   ...(frontmatters[template.name] ?? {}),
 }));
 await writeFile('examples.json', JSON.stringify(json, null, 2) + '\n', 'utf-8');
+await execa('prettier', ['--write', 'examples.json']);
 
 if (changedExampleSourceCode.length > 0) {
   console.log();
