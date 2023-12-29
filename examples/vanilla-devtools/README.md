@@ -27,9 +27,37 @@ First step is to register a `devtools_page` in your manifest. To do this with WX
 
 This page is where you create custom panels/sidebar panes. For this example, we'll create one of each. These pages are just [unlisted HTML pages](https://wxt.dev/entrypoints/unlisted-pages.html), so you can name the entrypoints whatever you like. We'll go with `devtools-panel` and `devtools-pane`.
 
-{{entrypoints/devtools-panel/index.html}}
+###### entrypoints/devtools-panel/index.html
 
-{{entrypoints/devtools-pane/index.html}}
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <p>Example panel details</p>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
+```
+
+###### entrypoints/devtools-pane/index.html
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <p>Example sidebar pane details</p>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
+```
 
 Next, in our `devtools_page`, we need to create the panel and sidebar pane:
 
@@ -57,32 +85,14 @@ Continue following [Chrome's docs](https://developer.chrome.com/docs/extensions/
 
 ### Other File Changes
 
-###### entrypoints/devtools-pane.html
+###### entrypoints/devtools-pane/main.ts
 
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <p>Example sidebar pane details</p>
-  </body>
-</html>
+```ts
+// JS for custom sidebar pane
 ```
 
-###### entrypoints/devtools-panel.html
+###### entrypoints/devtools-panel/main.ts
 
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <p>Example panel details</p>
-  </body>
-</html>
+```ts
+// JS for custom panel
 ```
