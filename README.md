@@ -57,3 +57,5 @@ You template can list a few template varialbes that will be replaced when genera
 
 - `{{base}}`: Replaced with information about which WXT template the example is based off of
 - `{{filename}}`: Replaced with the filename and diff/contents of the specified file
+
+You can also add YAML frontmatter to the templates, and that frontmatter will be added to `examples.json`, but removed from the final README. https://wxt.dev uses `tags` frontmatter to filter examples down in different locations, but it supports any field you add

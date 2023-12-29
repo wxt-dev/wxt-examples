@@ -138,14 +138,39 @@ const diffs = await Promise.all(
 console.log();
 console.log('Generating READMEs...');
 const titles: Record<string, string> = {};
+const frontmatters: Record<string, any> = {};
 for (const example of diffs) {
   const templatePath = path.resolve(example.path, 'README.template.md');
   const readmePath = path.resolve(example.path, 'README.md');
   console.log(`  - ${path.relative(cwd, readmePath)}`);
-  const template = await fs.readFile(
+  const fullTemplate = await fs.readFile(
     path.resolve(example.path, templatePath),
     'utf-8',
   );
+  function extractFrontmatterAndContent(markdown: string): {
+    frontmatter: any | null;
+    content: string;
+  } {
+    const frontmatterRegex = /^(---\s*[\r\n]+([\s\S]*?)[\r\n]+---)/;
+    const match = markdown.match(frontmatterRegex);
+
+    if (!match) {
+      return { frontmatter: null, content: markdown };
+    }
+
+    const frontmatterBlock = match[1];
+    const frontmatterContent = match[2];
+    const frontmatter = YAML.parse(frontmatterContent);
+    const contentWithoutFrontmatter = markdown
+      .replace(frontmatterBlock, '')
+      .trim();
+
+    return { frontmatter, content: contentWithoutFrontmatter };
+  }
+  const { content: template, frontmatter } =
+    extractFrontmatterAndContent(fullTemplate);
+
+  frontmatters[example.name] = frontmatter;
   titles[example.name] = template
     .match(/^\#\s+(.*)$/gm)?.[0]
     ?.replace('# ', '');
@@ -178,6 +203,7 @@ for (const example of diffs) {
 
   if (unusedFiles.size > 0) {
     readme += [
+      '',
       '---',
       '### Other File Changes',
       ...Array.from(unusedFiles).map((file) => {
@@ -196,6 +222,7 @@ console.log('Updating examples.json...');
 const json = examples.map((template) => ({
   name: titles[template.name] ?? template.name,
   url: `https://github.com/wxt-dev/wxt-examples/tree/main/examples/${template.name}#readme`,
+  ...(frontmatters[template.name] ?? {}),
 }));
 await writeFile('examples.json', JSON.stringify(json, null, 2) + '\n', 'utf-8');
 

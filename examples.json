@@ -1,11 +1,13 @@
 [
   {
     "name": "Devtools Setup",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-devtools#readme"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-devtools#readme",
+    "tags": ["devtools"]
   },
   {
     "name": "I18n",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-i18n#readme"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-i18n#readme",
+    "tags": ["i18n"]
   },
   {
     "name": "IndexedDB",
@@ -21,11 +23,13 @@
   },
   {
     "name": "Playwright",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-playwright#readme"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-playwright#readme",
+    "tags": ["testing"]
   },
   {
     "name": "Puppeteer",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-puppeteer#readme"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-puppeteer#readme",
+    "tags": ["testing"]
   },
   {
     "name": "TailwindCSS",
@@ -33,7 +37,8 @@
   },
   {
     "name": "Vitest",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-vitest#readme"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-vitest#readme",
+    "tags": ["testing"]
   },
   {
     "name": "Welcome Page",
@@ -41,7 +46,8 @@
   },
   {
     "name": "Vue I18n",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vue-i18n#readme"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vue-i18n#readme",
+    "tags": ["i18n"]
   },
   {
     "name": "Vue Storage Composable",

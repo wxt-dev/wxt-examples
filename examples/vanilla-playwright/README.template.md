@@ -1,3 +1,8 @@
+---
+tags:
+  - testing
+---
+
 # Playwright
 
 > Playwright's Chrome Extension docs: https://playwright.dev/docs/chrome-extensions

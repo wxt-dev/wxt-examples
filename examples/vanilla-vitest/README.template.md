@@ -1,3 +1,8 @@
+---
+tags:
+  - testing
+---
+
 # Vitest
 
 WXT has first class support for running unit tests with [Vitest](https://vitest.dev/).

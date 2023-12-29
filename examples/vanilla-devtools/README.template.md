@@ -1,3 +1,8 @@
+---
+tags:
+  - devtools
+---
+
 # Devtools Setup
 
 {{base}}

@@ -1,3 +1,8 @@
+---
+tags:
+  - testing
+---
+
 # Puppeteer
 
 > Puppeteer's Chrome Extension docs: https://pptr.dev/guides/chrome-extensions
