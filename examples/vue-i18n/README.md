@@ -19,7 +19,7 @@ First, let's install all the packages:
 ###### package.json
 
 ```diff
-@@ -12,13 +12,14 @@
+@@ -12,15 +12,17 @@
      "zip": "wxt zip",
      "zip:firefox": "wxt zip -b firefox",
      "compile": "vue-tsc --noEmit",
@@ -31,10 +31,13 @@ First, let's install all the packages:
 +    "vue-i18n": "9"
    },
    "devDependencies": {
++    "@intlify/unplugin-vue-i18n": "^1.4.0",
      "@vitejs/plugin-vue": "^5.0.1",
      "typescript": "^5.3.3",
      "vue-tsc": "^1.8.27",
      "wxt": "^0.13.0"
+   }
+ }
 ```
 
 ```sh
