@@ -1,5 +1,9 @@
 [
   {
+    "name": "Devtools Setup",
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-devtools/README.md"
+  },
+  {
     "name": "I18n",
     "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-i18n/README.md"
   },
