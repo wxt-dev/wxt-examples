@@ -23,12 +23,12 @@ The composable will use [`@vueuse/core`'s `useAsyncState`](https://vueuse.org/co
    },
    "dependencies": {
 +    "@vueuse/core": "^10.6.1",
-     "vue": "^3.3.4"
+     "vue": "^3.4.0"
    },
    "devDependencies": {
-     "@vitejs/plugin-vue": "^4.5.1",
-     "typescript": "^5.3.2",
-     "vue-tsc": "^1.8.25",
+     "@vitejs/plugin-vue": "^5.0.1",
+     "typescript": "^5.3.3",
+     "vue-tsc": "^1.8.27",
 ```
 
 Let's write the composable:

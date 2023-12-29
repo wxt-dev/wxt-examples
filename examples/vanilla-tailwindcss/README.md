@@ -25,8 +25,8 @@ After following the steps, you should end up with something like this:
 +    "autoprefixer": "^10.4.16",
 +    "postcss": "^8.4.31",
 +    "tailwindcss": "^3.3.5",
-     "typescript": "^5.3.2",
-     "wxt": "^0.12.0"
+     "typescript": "^5.3.3",
+     "wxt": "^0.13.0"
    }
  }
 ```
