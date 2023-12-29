@@ -195,7 +195,7 @@ console.log();
 console.log('Updating examples.json...');
 const json = examples.map((template) => ({
   name: titles[template.name] ?? template.name,
-  url: `https://github.com/wxt-dev/wxt-examples/tree/main/examples/${template.name}/README.md`,
+  url: `https://github.com/wxt-dev/wxt-examples/tree/main/examples/${template.name}#readme`,
 }));
 await writeFile('examples.json', JSON.stringify(json, null, 2) + '\n', 'utf-8');
 

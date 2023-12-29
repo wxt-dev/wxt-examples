@@ -1,50 +1,50 @@
 [
   {
     "name": "Devtools Setup",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-devtools/README.md"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-devtools#readme"
   },
   {
     "name": "I18n",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-i18n/README.md"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-i18n#readme"
   },
   {
     "name": "IndexedDB",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-indexed-db/README.md"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-indexed-db#readme"
   },
   {
     "name": "Messaging - Long Lived Connections",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-messaging-long-lived-connections/README.md"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-messaging-long-lived-connections#readme"
   },
   {
     "name": "Messaging - One Time Requests",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-messaging-one-time-requests/README.md"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-messaging-one-time-requests#readme"
   },
   {
     "name": "Playwright",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-playwright/README.md"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-playwright#readme"
   },
   {
     "name": "Puppeteer",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-puppeteer/README.md"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-puppeteer#readme"
   },
   {
     "name": "TailwindCSS",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-tailwindcss/README.md"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-tailwindcss#readme"
   },
   {
     "name": "Vitest",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-vitest/README.md"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-vitest#readme"
   },
   {
     "name": "Welcome Page",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-welcome-page/README.md"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-welcome-page#readme"
   },
   {
     "name": "Vue I18n",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vue-i18n/README.md"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vue-i18n#readme"
   },
   {
     "name": "Vue Storage Composable",
-    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vue-storage-composable/README.md"
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vue-storage-composable#readme"
   }
 ]
