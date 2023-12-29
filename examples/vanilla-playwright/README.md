@@ -27,8 +27,8 @@ First, install a few playwright dependencies and add a `e2e` convience script:
    "devDependencies": {
 +    "@playwright/test": "^1.40.1",
 +    "playwright": "^1.40.1",
-     "typescript": "^5.3.2",
-     "wxt": "^0.12.0"
+     "typescript": "^5.3.3",
+     "wxt": "^0.13.0"
    }
  }
 ```

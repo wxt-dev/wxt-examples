@@ -21,9 +21,9 @@ First, start by installing Vitest and setting up a `test` script:
 +    "test": "vitest"
    },
    "devDependencies": {
-     "typescript": "^5.3.2",
+     "typescript": "^5.3.3",
 +    "vitest": "^1.1.0",
-     "wxt": "^0.12.0"
+     "wxt": "^0.13.0"
    }
  }
 ```
