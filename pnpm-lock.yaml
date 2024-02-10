@@ -60,6 +60,31 @@ importers:
         specifier: ^0.16.0
         version: 0.16.5(@types/node@18.18.7)
 
+  examples/react-content-script-ui:
+    dependencies:
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@types/react':
+        specifier: ^18.2.46
+        version: 18.2.46
+      '@types/react-dom':
+        specifier: ^18.2.18
+        version: 18.2.18
+      '@vitejs/plugin-react':
+        specifier: ^4.2.1
+        version: 4.2.1(vite@5.0.8)
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
+      wxt:
+        specifier: ^0.13.0
+        version: 0.13.1(@types/node@18.18.7)
+
   examples/solid:
     dependencies:
       solid-js:
