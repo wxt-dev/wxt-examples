@@ -8,16 +8,17 @@ export default defineContentScript({
 
   async main(ctx) {
     const ui = await createShadowRootUi(ctx, {
-      name: 'example-ui',
+      name: 'wxt-react-example',
       position: 'inline',
-      anchor: '#anchor',
+      anchor: 'body',
+      append: 'first',
       onMount: (container) => {
         const root = ReactDOM.createRoot(container);
         root.render(<App />);
         return root;
       },
       onRemove: (root) => {
-        root.unmount();
+        root?.unmount();
       },
     });
 

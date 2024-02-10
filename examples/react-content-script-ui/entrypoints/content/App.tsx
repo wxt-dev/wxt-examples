@@ -1,1 +1,14 @@
-export default () => <p>This is react</p>;
+import { useState } from 'react';
+import './App.module.css';
+
+export default () => {
+  const [count, setCount] = useState(1);
+  const increment = () => setCount((count) => count + 1);
+
+  return (
+    <div>
+      <p>This is React. {count}</p>
+      <button onClick={increment}>Increment</button>
+    </div>
+  );
+};
