@@ -1,5 +1,9 @@
 [
   {
+    "name": "React Content Script UI",
+    "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/react-content-script-ui#readme"
+  },
+  {
     "name": "Devtools Setup",
     "url": "https://github.com/wxt-dev/wxt-examples/tree/main/examples/vanilla-devtools#readme",
     "tags": ["devtools"]
