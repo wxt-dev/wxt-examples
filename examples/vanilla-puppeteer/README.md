@@ -28,7 +28,7 @@ First, install both dependencies and add a `e2e` convience script:
 +    "puppeteer": "^21.6.1",
      "typescript": "^5.3.3",
 +    "vitest": "^1.1.0",
-     "wxt": "^0.13.0"
+     "wxt": "^0.16.0"
    }
  }
 ```
