@@ -17,6 +17,10 @@ There's lots of stuff going on there:
 3. Inside `onMount` and `onRemove`, we're creating and unmounting a react app.
 4. Finally, we're actually mounting the ui on the page by calling `ui.mount()`
 
+Don't forget to add the CSS file:
+
+{{entrypoints/content/style.css}}
+
 Next, let's create the app:
 
 {{entrypoints/content/App.tsx}}

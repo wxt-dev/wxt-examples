@@ -53,6 +53,22 @@ There's lots of stuff going on there:
 3. Inside `onMount` and `onRemove`, we're creating and unmounting a react app.
 4. Finally, we're actually mounting the ui on the page by calling `ui.mount()`
 
+Don't forget to add the CSS file:
+
+###### entrypoints/content/style.css
+
+```css
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  padding: 16px;
+}
+```
+
 Next, let's create the app:
 
 ###### entrypoints/content/App.tsx
@@ -86,21 +102,3 @@ p {
 It's just a basic counter app with scoped styles, nothing special here.
 
 And that's it! Just run `pnpm dev` to start the app for development, visit a website, like <https://google.com>, and you should see a black and yellow UI show up at the top of the page.
-
----
-
-### Other File Changes
-
-###### entrypoints/content/style.css
-
-```css
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: black;
-  padding: 16px;
-}
-```
