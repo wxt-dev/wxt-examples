@@ -10,4 +10,7 @@ export default defineConfig({
   },
   // This is the line that matters!
   plugins: [WxtVitest()],
+  // If any dependencies rely on webextension-polyfill, add them here to the `ssr` option.
+  // Example:
+  // ssr: ['@webext-core/storage'],
 });

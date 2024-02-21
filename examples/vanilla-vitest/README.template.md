@@ -21,6 +21,11 @@ Then, create a Vitest config file, importing WXT and adding the plugin to automa
 
 {{vitest.config.ts}}
 
+> [!CAUTION]
+> Make sure to add any dependencies you use to the `ssr` option if they depend on `webextension-polyfill`! If they are not listed here, Vitest will not process them, and cannot mock the polyfill they import. This will lead to errors with the message "This script should only be loaded in a browser extension". So remember to add dependencies to `ssr`!
+>
+> _Eventually, WXT will automatically detect these dependencies. Follow [Issue #475](https://github.com/wxt-dev/wxt/issues/475) to track progress_
+
 And that's it, you're all setup!
 
 For an example test, lets you want to save the date your extension was installed to storage:
