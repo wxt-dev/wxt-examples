@@ -51,8 +51,16 @@ export default defineConfig({
   },
   // This is the line that matters!
   plugins: [WxtVitest()],
+  // If any dependencies rely on webextension-polyfill, add them here to the `ssr` option.
+  // Example:
+  // ssr: ['@webext-core/storage'],
 });
 ```
+
+> [!CAUTION]
+> Make sure to add any dependencies you use to the `ssr` option if they depend on `webextension-polyfill`! If they are not listed here, Vitest will not process them, and cannot mock the polyfill they import. This will lead to errors with the message "This script should only be loaded in a browser extension". So remember to add dependencies to `ssr`!
+>
+> _Eventually, WXT will automatically detect these dependencies. Follow [Issue #475](https://github.com/wxt-dev/wxt/issues/475) to track progress_
 
 And that's it, you're all setup!
 
