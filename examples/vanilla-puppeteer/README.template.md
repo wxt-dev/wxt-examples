@@ -11,7 +11,7 @@ This example will walk you through adding E2E tests written with Puppeteer and V
 
 ## Setup
 
-First, install both dependencies and add a `e2e` convience script:
+First, install both dependencies and add a `e2e` convenience script:
 
 {{package.json}}
 

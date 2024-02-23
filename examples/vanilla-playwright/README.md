@@ -8,7 +8,7 @@ This example will walk you through adding E2E tests written with Playwright.
 
 ## Setup
 
-First, install a few playwright dependencies and add a `e2e` convience script:
+First, install a few playwright dependencies and add a `e2e` convenience script:
 
 ###### package.json
 

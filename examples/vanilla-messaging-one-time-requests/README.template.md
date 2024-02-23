@@ -6,7 +6,7 @@ This example demonstrates how to send messages to and from your background scrip
 
 {{entrypoints/popup/main.ts}}
 
-The background recieves the message, and returns a response.
+The background receives the message, and returns a response.
 
 {{entrypoints/background.ts}}
 
@@ -14,7 +14,7 @@ With this code, you should see the following logs when inspecting the popup in d
 
 ```
 Popup sending: ping
-Background recieved: ping
+Background received: ping
 Background sending: pong
 Popup response: pong
 ```

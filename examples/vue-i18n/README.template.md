@@ -44,7 +44,7 @@ First, the manifest translations go in the `public/_locales` directory.
 
 {{public/_locales/ko/messages.json}}
 
-> Note that we specified the "en" locale as the deafult. We also used `extName` and `extDescription` in the manifest, which are declared in these files.
+> Note that we specified the "en" locale as the default. We also used `extName` and `extDescription` in the manifest, which are declared in these files.
 >
 > See [Chrome's internationalization docs](https://developer.chrome.com/docs/extensions/reference/i18n/) for more details around this setup.
 
