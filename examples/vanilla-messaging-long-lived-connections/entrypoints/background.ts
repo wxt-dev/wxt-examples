@@ -5,7 +5,7 @@ export default defineBackground(() => {
     if (port.name !== 'example') return;
 
     port.onMessage.addListener((message) => {
-      console.log('Background recieved:', message);
+      console.log('Background received:', message);
       console.log('Background sending:', 'pong');
       port.postMessage('pong');
     });

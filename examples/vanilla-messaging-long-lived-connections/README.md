@@ -23,7 +23,7 @@ First, we need to setup a port to let other context's connect to.
 +    if (port.name !== 'example') return;
 +
 +    port.onMessage.addListener((message) => {
-+      console.log('Background recieved:', message);
++      console.log('Background received:', message);
 +      console.log('Background sending:', 'pong');
 +      port.postMessage('pong');
 +    });
@@ -46,7 +46,7 @@ Then in our other files, like content scripts, options page, or popup, you need 
 +
 +const port = browser.runtime.connect({ name: 'example' });
 +port.onMessage.addListener((message) => {
-+  console.log('Popup recieved:', message);
++  console.log('Popup received:', message);
 +});
 +console.log('Popup sending:', 'ping');
 +port.postMessage('ping');
@@ -56,7 +56,7 @@ With this code, you should see messages sent to and from the background when the
 
 ```
 Popup sending: ping
-Background recieved: ping
+Background received: ping
 Background sending: pong
-Popup recieved: pong
+Popup received: pong
 ```

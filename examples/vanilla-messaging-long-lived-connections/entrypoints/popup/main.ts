@@ -25,7 +25,7 @@ setupCounter(document.querySelector<HTMLButtonElement>('#counter')!);
 
 const port = browser.runtime.connect({ name: 'example' });
 port.onMessage.addListener((message) => {
-  console.log('Popup recieved:', message);
+  console.log('Popup received:', message);
 });
 console.log('Popup sending:', 'ping');
 port.postMessage('ping');

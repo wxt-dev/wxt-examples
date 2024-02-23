@@ -27,7 +27,7 @@ This example demonstrates how to send messages to and from your background scrip
 +});
 ```
 
-The background recieves the message, and returns a response.
+The background receives the message, and returns a response.
 
 ###### entrypoints/background.ts
 
@@ -37,7 +37,7 @@ The background recieves the message, and returns a response.
    console.log('Hello background!', { id: browser.runtime.id });
 +
 +  browser.runtime.onMessage.addListener(async (message) => {
-+    console.log('Background recieved:', message);
++    console.log('Background received:', message);
 +    console.log('Background sending:', 'pong');
 +    return 'pong';
 +  });
@@ -48,7 +48,7 @@ With this code, you should see the following logs when inspecting the popup in d
 
 ```
 Popup sending: ping
-Background recieved: ping
+Background received: ping
 Background sending: pong
 Popup response: pong
 ```

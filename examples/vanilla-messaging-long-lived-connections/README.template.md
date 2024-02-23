@@ -16,7 +16,7 @@ With this code, you should see messages sent to and from the background when the
 
 ```
 Popup sending: ping
-Background recieved: ping
+Background received: ping
 Background sending: pong
-Popup recieved: pong
+Popup received: pong
 ```

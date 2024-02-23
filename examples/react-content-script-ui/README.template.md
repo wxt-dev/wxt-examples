@@ -6,7 +6,7 @@ This example will walk you through creating a UI inside a content script with is
 
 To add a content script to the extension, create a file named `content/index.tsx` inside the `entrypoints/` directory.
 
-> See https://wxt.dev/entrypoints/content-scripts.html for alternatie names.
+> See https://wxt.dev/entrypoints/content-scripts.html for alternative names.
 
 {{entrypoints/content/index.tsx}}
 
