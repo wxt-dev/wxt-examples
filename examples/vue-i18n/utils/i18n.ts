@@ -7,5 +7,6 @@ export type I18nSchema = typeof schema;
 export type I18nLocales = 'en' | 'ko';
 
 export default createI18n<[I18nSchema], I18nLocales>({
-  messages: messages as any,
+  locale: browser.i18n.getUILanguage(),
+  messages: messages as Record<I18nLocales, I18nSchema>,
 });
