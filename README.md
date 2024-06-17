@@ -1,3 +1,6 @@
+> [!WARNING]
+> Archived. See https://github.com/wxt-dev/examples for a more up-to-date set of examples.
+
 # WXT Examples
 
 To run an example, install dependencies, cd into the directory, and run the `wxt dev` command.
